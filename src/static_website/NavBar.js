@@ -1,6 +1,6 @@
 import { dataObjects } from './dataObjectFunction';
 import UnOrderedLists from './list';
-import React, { StrictMode } from 'react';
+import './index.css';
 
 export default function Navbar() {
   const data = ['Pricing', 'About', 'Contact'];
