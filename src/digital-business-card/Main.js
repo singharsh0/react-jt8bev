@@ -7,7 +7,7 @@ import React from 'react';
 export default function MainContent() {
 
   return (
-    <div>
+    <div className='main-container'>
       <Info />
       <About />
       <Interest />

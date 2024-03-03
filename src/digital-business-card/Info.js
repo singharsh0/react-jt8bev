@@ -1,10 +1,8 @@
 import React, { StrictMode } from 'react';
 import './index.css';
+const urlLinkedin = 'https://www.linkedin.com/in/bharatiya/';
+const sendMail = "mailto:xyz@abc.com?subject=Me&body=Hello!";
 
-function mailtrigger() {
-  console.log('in')
-  window.open("mailto:xyz@abc.?subject=Me&body=Hello!");
-}
 export default function Header() {
   return (
     <section>
@@ -15,8 +13,8 @@ export default function Header() {
         <h5>harshsingh22267@gmail.com</h5>
       </section>
       <section className='info-links' >
-        <button className='mail-button' onClick={mailtrigger()}><img src="../assets/Mail.svg"></img>Email</button>
-        <button className='linkedin-button '><img src="../assets/linkedin.svg" height={20}></img>LinkedIn</button>
+        <a className='mail-button' href={sendMail}><img src="../assets/Mail.svg"></img>Email</a>
+        <a className='linkedin-button' href={urlLinkedin} target='_blank'><img src="../assets/linkedin.svg" height={20}></img>LinkedIn</a>
       </section>
     </section>
   );

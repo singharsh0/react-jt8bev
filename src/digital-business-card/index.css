@@ -1,10 +1,26 @@
+.main-container {
+  position: absolute;
+  width: 317px;
+  height: 780px;
+  left: 116px;
+  top: 44px;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
 .info-details {
+  position: absolute;
+  left: 152px;
   text-align: center;
 }
 
-
 .info-details>span {
   color: #F3BF99;
+}
+
+.info-details>h1 {
+  font-size: 25px;
+  margin-bottom: 0px;
 }
 
 .info-details>h5 {
@@ -14,24 +30,32 @@
 
 .info-links {
   display: flex;
+  position: absolute;
+  left: 152px;
   align-items: center;
   justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .mail-button {
   box-sizing: border-box;
+  text-decoration: none;
+  font-size: 14px;
+  color: #374151;
+  position: absolute;
+  top: 468px;
+  left: 15px;
 
   /* Auto layout */
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 9px 13px 9px 11px;
+  padding: 9px 20px 9px 20px;
   gap: 8px;
 
-  /* position: absolute; */
-  width: 115px;
-  height: 34px;
+  /* width: 115px;
+  height: 34px; */
   /* left: 151px; */
   /* top: 468px; */
 
@@ -46,6 +70,11 @@
 
 .linkedin-button {
   /* Button */
+  text-decoration: none;
+  font-size: 14px;
+  position: absolute !important;
+  top: 468px;
+  left: 151px;
 
   /* Auto layout */
   color: white;
@@ -53,15 +82,15 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 9px 13px 9px 16px;
+  padding: 9px 16px 9px 16px;
   gap: 8px;
 
   /* position: relative; */
-  width: 115px;
-  height: 34px;
+  /* width: 115px; */
+  /* height: 34px; */
 
   background: #5093E2;
-  border: 1px ;
+  /* border: 1px ; */
 
   margin-left: 1rem;
   /* shadow/sm */
@@ -70,13 +99,31 @@
 
 }
 
+.main-section {
+  position: relative;
+  width: 247px;
+  height: 201px;
+  left: 152px;
+  top: 530px;
+  width: 300px;
+  text-align: justify;
+  margin-bottom: -1rem;
+}
+
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #21222A;
-  color: white;
-  text-align: center;
-  font-size: 16px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: sp;
+  width: 317px;
+  height: 64px;
+  left: 150px;
+  top: 920px;
+  background: #161619;
+  border-radius: 0px 0px 10px 10px;
+}
+.footer > img {
+  margin-right: 1rem;
+  width: 2rem;
 }
