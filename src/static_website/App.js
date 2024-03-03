@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import StaticWeb from './static_website/index';
+import StaticWeb from './index';
 export default function App() {
   return (
     <div>
