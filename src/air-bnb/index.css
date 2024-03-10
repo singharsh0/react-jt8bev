@@ -1,9 +1,58 @@
 nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 1rem;
   box-shadow: 0px 3px 7.4564px 1px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header>img {
+  max-width: 400px;
+  align-self: center;
+}
+
+.main-header {
+  font-size: 40px;
+  /* margin-right: -20px; */
+  margin-bottom: 0px;
+}
+
+.main-para {
+  max-width: 400px;
+  margin-bottom: 0px;
+}
+
+.card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 176px;
+}
+
+.card--ahtelete {
+  height: 235px;
+  width: 176px;
+}
+.card--star {
+  height: 14px;
+  width: 14px;
+}
+
+.card > div > span {
+  font-size: 12px;
+}
+
+.card-text-light {
+  color: #918E9B;
+}
+
+.card > p {
+  font-size: 13px;
+  margin: 3px 0px 2px 0px;
 }
 
 .footer {
@@ -15,22 +64,4 @@ nav {
   color: white;
   text-align: center;
   font-size: 16px;
-}
-
-.main-header {
-  margin-left: 1rem;
-}
-
-.main-items {
-  margin: 20px;
-  max-width: 400px;
-}
-
-.main-items>li {
-  padding-block: 10px;
-}
-
-.main-items>li::marker {
-  font-size: 1.4rem;
-  color: #61DAFB;
 }
