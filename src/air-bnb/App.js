@@ -9,11 +9,14 @@ import './style.css';
 
 export default function App() {
   console.log(data,'data')
+  const multiCard = data.map((each) => {
+    return <Card img={each.coverImg} rating={each.stats.rating} reviewCount={each.stats.reviewCount} country="USA" title={each.title} price={each.price} />
+  })
   return (
     <div>
       <Navbar />
       <Main />
-      <Card img="athele.svg" rating={5.0} reviewCount={6} country="USA" title="Life lessons with Katie Zaferes" price={136} />
+      {multiCard}
       <Footer />
     </div>
   );
