@@ -1,10 +1,12 @@
-export default function Card() {
+export default function Card(props) {
+
+    const img = "../assets/" + props.img
     return (
         <section className="card">
-            <img className="card--ahtelete" src="../assets/athele.svg"></img>
-            <div><img className="card--star" src="../assets/Star.svg"></img><span> 5.0 </span><span className="card-text-light">(6) • USA</span></div>
-            <p>Life lessons with Katie Zaferes</p>
-            <p><b>From $136</b> / person</p>
+            <img className="card--ahtelete" src={`../assets/${props.img}`}></img>
+            <div><img className="card--star" src="../assets/Star.svg"></img><span> {props.rating} </span><span className="card-text-light">({props.reviewCount}) • {props.country}</span></div>
+            <p>{props.title}</p>
+            <p><b>From ${props.price}</b> / person</p>
         </section>
     )
 }
