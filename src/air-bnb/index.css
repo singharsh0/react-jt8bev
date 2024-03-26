@@ -1,0 +1,94 @@
+nav {
+  display: flex;
+  padding: 1rem;
+  box-shadow: 0px 3px 7.4564px 1px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header>img {
+  max-width: 400px;
+  align-self: center;
+}
+
+.main-header {
+  font-size: 40px;
+  margin-bottom: 0px;
+}
+
+.main-para {
+  max-width: 400px;
+  margin-bottom: 0px;
+}
+
+.card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 176px;
+}
+
+.card--badge {
+  position: absolute;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 110%;
+  text-align: center;
+
+  color: #222222;
+  background-color: aliceblue;
+  padding: 4px;
+  margin: 6px;
+  border-radius:2px;
+}
+
+.card-list {
+  flex: 0 0 auto;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.card--ahtelete {
+  height: 235px;
+  width: 176px;
+}
+
+.card--star {
+  height: 14px;
+  width: 14px;
+}
+
+.card--stats {
+  display: flex;
+  align-items: center;
+}
+
+.card>div>span {
+  font-size: 12px;
+}
+
+.card-text-light {
+  color: #918E9B;
+}
+
+.card>p {
+  font-size: 13px;
+  margin: 3px 0px 2px 0px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #21222A;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}

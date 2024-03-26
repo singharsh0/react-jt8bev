@@ -16,8 +16,8 @@ export default function MainContent() {
   return (
     <div>
       <Header />
-      <h1>Fun facts about React</h1>
-      <UnOrderedLists dishes={dataAsObj} />
+      <h1 className='main-header'>Fun facts about React</h1>
+      <UnOrderedLists ulclass="main-items"dishes={dataAsObj} />
       <Footer />
     </div>
   );
