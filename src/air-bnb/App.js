@@ -8,15 +8,16 @@ import './style.css';
 
 
 export default function App() {
-  console.log(data,'data')
   const multiCard = data.map((each) => {
-    return <Card img={each.coverImg} rating={each.stats.rating} reviewCount={each.stats.reviewCount} country="USA" title={each.title} price={each.price} />
+    return <Card item={each} country="USA" />
   })
   return (
     <div>
       <Navbar />
       <Main />
+      <section className="card-list">
       {multiCard}
+      </section>
       <Footer />
     </div>
   );

@@ -9,7 +9,7 @@ export const data = [{
         reviewCount: 30
     },
     location: "Online",
-    openSpots: 27,
+    openSpots: 0,
 },
 {
     id: 2,
